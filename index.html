@@ -8,13 +8,29 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<!--<section data-transition="convex">
+					<h2>GitHolidayParty</h2>
+					<p>Inspired by <a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF">freeCodeCamp's tutorial series</a></p>
+				</section>
+				
+				<section data-transition="convex">Setting up Git</section>
+				<section data-transition="convex">Branching and Workflow</section>
+				<section data-transition="convex">Workflow for Open Source</section>
+				<section data-transition="convex">Cloning and Working Locally</section>
+				<section data-transition="convex">Most Used Commands</section>
+				<section data-transition="convex">How Commits Work</section>
+				<section data-transition="convex">2-step Commit</section>
+				<section data-transition="convex">Merging</section>
+				<section data-transition="convex">Conflicts</section>
+				<section data-transition="convex">Rebasing</section>
+				<section data-transition="convex">Undoing Commits</section>-->
 				<section data-transition="convex">
 					<h2>GitHolidayParty</h2>
 					<p>Inspired by <a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF">freeCodeCamp's tutorial series</a></p>
 				</section>
-        			<section data-transition="convex">introGITion</section>
+				
 				<section data-transition="convex">
-					<section data-transition="convex">Git vs GitHub</section>
+					<section data-transition="convex"><h2>Git vs GitHub</h2></section>
 					<section data-transition="convex">
 						<h3>Git</h3>
 						<ul>
@@ -34,24 +50,43 @@
 						</ul>
 					</section>
 				</section>
-				<section data-transition="convex">Setting up Git</section>
-				<section data-transition="convex">Branching and Workflow</section>
-				<section data-transition="convex">Workflow for Open Source</section>
-				<section data-transition="convex">Cloning and Working Locally</section>
-				<section data-transition="convex">Most Used Commands</section>
-				<section data-transition="convex">How Commits Work</section>
-				<section data-transition="convex">2-step Commit</section>
-				<section data-transition="convex">Merging</section>
-				<section data-transition="convex">Conflicts</section>
-				<section data-transition="convex">Rebasing</section>
-				<section data-transition="convex">Undoing Commits</section>
+				
 				<section data-transition="convex">
-					<h2>GitHolidayParty</h2>
-					<p>Inspired by <a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF">freeCodeCamp's tutorial series</a></p>
+					<section data-transition="convex"><h2>Setting up Git</h2></section>
+					<section data-transition="convex">
+						<img src="images/newRepo.PNG" />
+					<footer>*Don't forget the open-source licese!</footer>
+							</section>
+				  <section data-transition="convex">
+					<h3>Cloning</h3>
+					<ol>
+					  <li class="fragment" data-fragment-index="1">Copy the URL for the new repo</li>
+					  <li class="fragment" data-fragment-index="2">Open Git Bash in your working directory</li>
+					  <li class="fragment" data-fragment-index="3"><pre style="width:100%"><code data-trim data-noescape>
+$ git clone <mark>https://github.com/USERNAME/YOUR-REPO</mark>
+			</code></pre></li>
+					</ol>
+				  </section>
+				  <section data-transition="convex">
+					<h3>Initializing</h3>
+					<ol>
+					  <li class="fragment" data-fragment-index="1">Open the working directory</li>
+					  <li class="fragment" data-fragment-index="2">Write your first bit of code</li>
+					  <li class="fragment" data-fragment-index="3"><pre><code data-trim data-noescape>git add . ; git commit</code></pre></li>
+					  <li class="fragment" data-fragment-index="4">Connect to GitHub</li>
+					  
+						<ol class="fragment" data-fragment-index="5" style="list-style-type: lower-alpha">
+						  <li>Create a new repo</li>
+						  <li>Push an existing repository</li>
+						  <li"><pre style="width:100%"><code data-trim data-noescape>
+$ git remote add origin https://github.com/username/new_repo
+$ git push -u origin master
+			</code></pre></li>
+						</ol>
+					</ol>
+				  </section>
 				</section>
-				<section data-transition="convex">
-					<h2>Setting up Git</h2>
-				</section>
+				
 				<section data-transition="convex">
 					<h2>Branching and Workflow</h2>
 				</section>
