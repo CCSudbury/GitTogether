@@ -1,234 +1,354 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="css/reveal.css" />
-		<link rel="stylesheet" href="css/theme/moon.css" />
-		<link rel="stylesheet" href="css/presentation.css" />
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<!--<section data-transition="convex">
-					<h2>GitHolidayParty</h2>
-					<p>Inspired by <a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF">freeCodeCamp's tutorial series</a></p>
-				</section>
 
-				<section data-transition="convex">Setting up Git</section>
-				<section data-transition="convex">Branching and Workflow</section>
-				<section data-transition="convex">Workflow for Open Source</section>
-				<section data-transition="convex">Cloning and Working Locally</section>
-				<section data-transition="convex">Most Used Commands</section>
-				<section data-transition="convex">How Commits Work</section>
-				<section data-transition="convex">2-step Commit</section>
-				<section data-transition="convex">Merging</section>
-				<section data-transition="convex">Conflicts</section>
-				<section data-transition="convex">Rebasing</section>
-				<section data-transition="convex">Undoing Commits</section>-->
-				<section data-transition="convex">
-					<h2>GitHolidayParty</h2>
-					<p>Inspired by <a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF">freeCodeCamp's tutorial series</a></p>
-				</section>
+<head>
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/moon.css" />
+    <link rel="stylesheet" href="css/presentation.css" />
+</head>
 
-				<section data-transition="convex">
-					<section data-transition="convex"><h2>Git vs GitHub</h2></section>
-					<section data-transition="convex">
-						<h3>Git</h3>
-						<ul>
-							<li>Version Control Software (VCS)</li>
-							<ul><li>Time capsule</li></ul>
-							<li>Open Source</li>
-							<ul><li><a href="git-scm.com">git-scm</a></li></ul>
-						</ul>
-					</section>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-transition="convex">
+                <h2>GitHolidayParty</h2>
+                <p>
+			Inspired by
+			<a href="https://www.youtube.com/playlist?
+				list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF">
+				freeCodeCamp's tutorial series
+			</a>
+		</p>
+            </section>
 
-					<section data-transition="convex">
-						<h3>GitHub</h3>
-						<h4>or GitLab</h4>
-						<ul>
-							<li>Collaboration site</li>
-							<li>Interacts with Git</li>
-						</ul>
-					</section>
-				</section>
+            <section data-transition="convex">
+                <section data-transition="convex">
+                    <h2>Git vs GitHub</h2>
+                </section>
+                <section data-transition="convex">
+                    <h3>Git</h3>
+                    <ul>
+                        <li>Version Control Software (VCS)</li>
+                        <ul>
+                            <li>Time capsule</li>
+                        </ul>
+                        <li>Open Source</li>
+                        <ul>
+                            <li><a href="https://git-scm.com">git-scm</a></li>
+                        </ul>
+                    </ul>
+                </section>
 
-				<section data-transition="convex">
-					<section data-transition="convex"><h2>Setting up Git</h2></section>
-					<section data-transition="convex">
-						<img src="images/newRepo.PNG" />
-					<footer>*Don't forget the open-source license!</footer>
-							</section>
-				  <section data-transition="convex">
-					<h3>Cloning</h3>
-					<ol>
-					  <li class="fragment" data-fragment-index="1">Copy the URL for the new repo</li>
-					  <li class="fragment" data-fragment-index="2">Open Git Bash in your working directory</li>
-					  <li class="fragment" data-fragment-index="3"><pre style="width:100%"><code data-trim data-noescape>
-$ git clone <mark>https://github.com/USERNAME/THE-REPO</mark>
-			</code></pre></li>
-					</ol>
-				  </section>
-				  <section data-transition="convex">
-					<h3>Initializing</h3>
-					<ol>
-					  <li class="fragment" data-fragment-index="1">Open the working directory</li>
-					  <li class="fragment" data-fragment-index="2">Write your first bit of code</li>
-					  <li class="fragment" data-fragment-index="3"><pre><code data-trim data-noescape>git add . ; git commit</code></pre></li>
-					  <li class="fragment" data-fragment-index="4">Connect to GitHub</li>
+                <section data-transition="convex">
+                    <h3>GitHub</h3>
+                    <h4>or GitLab</h4>
+                    <ul>
+                        <li>Collaboration site</li>
+                        <li>Interacts with Git</li>
+                    </ul>
+                </section>
+            </section>
 
-						<ol class="fragment" data-fragment-index="5" style="list-style-type: lower-alpha">
-						  <li>Create a new repo</li>
-						  <li>Push an existing repository</li>
-						  <li><pre style="width:100%"><code data-trim data-noescape>
-$ git remote add origin https://github.com/username/new_repo
-$ git push -u origin master
-			</code></pre></li>
-						</ol>
-					</ol>
-				  </section>
-				</section>
+            <section data-transition="convex">
+                <section data-transition="convex">
+                    <h2>Setting up Git</h2>
+                </section>
+                <section data-transition="convex">
+                    <img src="images/newRepo.PNG" />
+                    <footer>*Don't forget the open-source license!</footer>
+                </section>
+                <section data-transition="convex">
+                    <h3>Cloning</h3>
+                    <ol>
+                        <li class="fragment" data-fragment-index="1">
+				Copy the URL for the new repo
+			</li>
+                        <li class="fragment" data-fragment-index="2">
+				Open Git Bash in your working directory
+			</li>
+                        <li class="fragment" data-fragment-index="3">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						$ git clone <mark>https://github.com/USERNAME/THE-REPO</mark>
+					</code>
+				</pre>
+			</li>
+                    </ol>
+                </section>
+                <section data-transition="convex">
+                    <h3>Initializing</h3>
+                    <ol>
+                        <li class="fragment" data-fragment-index="1">
+				Open the working directory
+			</li>
+                        <li class="fragment" data-fragment-index="2">
+				Write your first bit of code
+			</li>
+                        <li class="fragment" data-fragment-index="3">
+				<pre>
+					<code data-trim data-noescape>
+						git add . ; git commit
+					</code>
+				</pre>
+			</li>
+                        <li class="fragment" data-fragment-index="4">
+				Connect to GitHub
+			</li>
 
-				<section data-transition="convex">
-					<section data-transition="convex"><h2>Branching and Workflow</h2></section>
-          <section data-transition="convex">
-            <h3>5 things to remember in a Git workflow</h3>
-            <ol>
-              <li class="fragment" data-fragment-index="1">Branching</li>
-                <ul><li class="fragment" data-fragment-index="1">Good practice not to work directly on master*</li></ul>
-              <li class="fragment" data-fragment-index="2">Commits</li>
-                <ul><li class="fragment" data-fragment-index="2">As many or few as you want!</li></ul>
-              <li class="fragment" data-fragment-index="3">Pull Request</li>
-              <li class="fragment" data-fragment-index="4">Collaborate</li>
-                <ul><li  class="fragment" data-fragment-index="4">Maybe make some more commits/changes</li></ul>
-              <li class="fragment" data-fragment-index="5">Merge</li>
-                <ul><li class="fragment" data-fragment-index="5">Pray</li></ul>
-            </ol>
-          </section>
-				</section>
+                        <ol class="fragment" data-fragment-index="5" 
+				style="list-style-type: lower-alpha">
+                            <li>Create a new repo</li>
+                            <li>Push an existing repository</li>
+                            <li>
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						$ git remote add origin https://github.com/username/new_repo
+						$ git push -u origin master
+					</code>
+				</pre>
+			    </li>
+                        </ol>
+                    </ol>
+                </section>
+            </section>
 
-				<section data-transition="convex">
-					<h2>Workflow for Open Source</h2>
-					<section data-transition="convex">
-						<h3>Forking</h3>
-						<ul>
-							<li>A snapshot of the project under your personal account</li>
-						</ul>
-					</section>
-					<section data-transition="convex">
-						<h3>Pull Request</h3>
-						<ul>
-							<li>Send the modifications made on your snapshot back to the project</li>
-						</ul>
-					</section>
-				</section>
+            <section data-transition="convex">
+                <section data-transition="convex">
+                    <h2>Branching and Workflow</h2>
+                </section>
+                <section data-transition="convex">
+                    <h3>5 things to remember in a Git workflow</h3>
+                    <ol>
+                        <li class="fragment" data-fragment-index="1">Branching</li>
+                        <ul>
+                            <li class="fragment" data-fragment-index="1">
+				Good practice not to work directly on master*
+			    </li>
+                        </ul>
+                        <li class="fragment" data-fragment-index="2">Commits</li>
+                        <ul>
+                            <li class="fragment" data-fragment-index="2">
+				As many or few as you want!
+			    </li>
+                        </ul>
+                        <li class="fragment" data-fragment-index="3">Pull Request</li>
+                        <li class="fragment" data-fragment-index="4">Collaborate</li>
+                        <ul>
+                            <li class="fragment" data-fragment-index="4">
+				Maybe make some more commits/changes
+			    </li>
+                        </ul>
+                        <li class="fragment" data-fragment-index="5">Merge</li>
+                        <ul>
+                            <li class="fragment" data-fragment-index="5">Pray</li>
+                        </ul>
+                    </ol>
+                </section>
+            </section>
 
-        <section data-transition="convex">
-					<section data-transition="convex"><h2>Cloning and Working Locally</h2></section>
-          <section data-transition="convex">
-            <h3>Cloning</h3>
-            <ol>
-              <li>IDE</li>
-              <li>Desktop app</li>
-              <li>Command Line (Windows, UNIX, Git Bash)</li>
-            </ol>
-          </section>
-          <section data-transition="convex">
-            There are two* places Git repos are stored
-            <ul>
-              <li>Remote (GitHub)</li>
-              <li>Locally (your computer)</li>
-              <li class="fragment" data-fragment-index="1">Locally (friend's computer)</li>
-              <li class="fragment" data-fragment-index="2">Locally (co-worker's computer)</li>
-              <li class="fragment" data-fragment-index="3">Locally (boss' computer)</li>
-              <li class="fragment" data-fragment-index="4">...</li>
-            </ul>
-          </section>
-				</section>
+            <section data-transition="convex">
+                <h2>Workflow for Open Source</h2>
+                <section data-transition="convex">
+                    <h3>Forking</h3>
+                    <ul>
+                        <li>A snapshot of the project under your personal account</li>
+                    </ul>
+                </section>
+                <section data-transition="convex">
+                    <h3>Pull Request</h3>
+                    <ul>
+                        <li>Send the modifications made on your snapshot back to the project</li>
+                    </ul>
+                </section>
+            </section>
 
-        <section data-transition="convex">
-					<section data-transition="convex"><h2>Most Used Commands</h2></section>
-          <section data-transition="convex">
-            <ul>
-              <li class="fragment" data-fragment-index="1"><pre style="width:100%"><code data-trim data-noescape>git clone</code></pre></li>
-              <li class="fragment" data-fragment-index="2"><pre style="width:100%"><code data-trim data-noescape>git pull/fetch</code></pre></li>
-              <li class="fragment" data-fragment-index="3"><pre style="width:100%"><code data-trim data-noescape>git branch feature-branch</code></pre></li>
-              <li class="fragment" data-fragment-index="4"><pre style="width:100%"><code data-trim data-noescape>git checkout feature-branch</code></pre></li>
-              <li class="fragment" data-fragment-index="5"><pre style="width:100%"><code data-trim data-noescape>git status</code></pre></li>
-              <li class="fragment" data-fragment-index="6"><pre style="width:100%"><code data-trim data-noescape>git add .</code></pre></li>
-              <li class="fragment" data-fragment-index="7"><pre style="width:100%"><code data-trim data-noescape>git commit [-m]</code></pre></li>
-              <li class="fragment" data-fragment-index="8"><pre style="width:100%"><code data-trim data-noescape>git push</code></pre></li>
-            </ul>
-          </section>
-        </section>
+            <section data-transition="convex">
+                <section data-transition="convex">
+                    <h2>Cloning and Working Locally</h2>
+                </section>
+                <section data-transition="convex">
+                    <h3>Cloning</h3>
+                    <ol>
+                        <li>IDE</li>
+                        <li>Desktop app</li>
+                        <li>Command Line (Windows, UNIX, Git Bash)</li>
+                    </ol>
+                </section>
+                <section data-transition="convex">
+                    There are two* places Git repos are stored
+                    <ul>
+                        <li>Remote (GitHub)</li>
+                        <li>Locally (your computer)</li>
+                        <li class="fragment" data-fragment-index="1">Locally (friend's computer)</li>
+                        <li class="fragment" data-fragment-index="2">Locally (co-worker's computer)</li>
+                        <li class="fragment" data-fragment-index="3">Locally (boss' computer)</li>
+                        <li class="fragment" data-fragment-index="4">...</li>
+                    </ul>
+                </section>
+            </section>
 
-        <section data-transition="convex">
-					<h2>How Commits Work</h2>
-					<ul>
-						<li>Each commit has a unique ID of 40 characters (SHA-1 Hash) containing information about the commit such as the parent commit</li>
-					</ul>
-				</section>
+            <section data-transition="convex">
+                <section data-transition="convex">
+                    <h2>Most Used Commands</h2>
+                </section>
+                <section data-transition="convex">
+                    <ul>
+                        <li class="fragment" data-fragment-index="1">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						git clone
+					</code>
+				</pre>
+			</li>
+                        <li class="fragment" data-fragment-index="2">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						git pull/fetch
+					</code>
+				</pre>
+			</li>
+                        <li class="fragment" data-fragment-index="3">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						git branch feature-branch
+					</code>
+				</pre>
+			</li>
+                        <li class="fragment" data-fragment-index="4">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						git checkout feature-branch
+					</code>
+				</pre>
+			</li>
+                        <li class="fragment" data-fragment-index="5">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						git status
+					</code>
+				</pre>
+			</li>
+                        <li class="fragment" data-fragment-index="6">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						git add .
+					</code>
+				</pre>
+			</li>
+                        <li class="fragment" data-fragment-index="7">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						git commit [-m]
+					</code>
+				</pre>
+			</li>
+                        <li class="fragment" data-fragment-index="8">
+				<pre style="width:100%">
+					<code data-trim data-noescape>
+						git push
+					</code>
+				</pre>
+			</li>
+                    </ul>
+                </section>
+            </section>
 
-        <section data-transition="convex">
-					<section data-transition="convex"><h2>2-step Commit</h2></section>
-          <section data-transition="convex">
-            Git has three sections:<br>
-            <ol>
-              <li>Working Directory</li>
-              <li>Staging Area</li>
-              <li>History</li>
-            </ol>
-            <pre><code data-trim data-noescape>git add</code></pre> moves from PWD to Staging
-            <pre><code data-trim data-noescape>git commit</code></pre> moves from Staging to History
-          </section>
-          <section data-transition="convex">
-            Example:
-            <ul>
-              <li>Working on a website you edit a few pages, but you also add some missing images from another page.</li>
-              <li>You can add and commit them independently to highlight that the changes were not related</li>
-            </ul>
-          </section>
-				</section>
+            <section data-transition="convex">
+                <h2>How Commits Work</h2>
+                <ul>
+                    <li>
+			Each commit has a unique ID of 40 characters
+			(SHA-1 Hash) containing information about the commit
+			such as the parent commit
+		    </li>
+                </ul>
+            </section>
 
-        <section data-transition="convex">
-					<h2>Merging</h2>
-					<ul>
-						<li>Let's bring those changes back to the project</li>
-					</ul>
-				</section>
+            <section data-transition="convex">
+                <section data-transition="convex">
+                    <h2>2-step Commit</h2>
+                </section>
+                <section data-transition="convex">
+                    Git has three sections:<br>
+                    <ol>
+                        <li>Working Directory</li>
+                        <li>Staging Area</li>
+                        <li>History</li>
+                    </ol>
+                    <pre><code data-trim data-noescape>git add</code></pre> moves from PWD to Staging
+                    <pre><code data-trim data-noescape>git commit</code></pre> moves from Staging to History
+                </section>
+                <section data-transition="convex">
+                    Example:
+                    <ul>
+                        <li>Working on a website you edit a few pages, but you also add some missing images from another page.</li>
+                        <li>You can add and commit them independently to highlight that the changes were not related</li>
+                    </ul>
+                </section>
+            </section>
 
-        <section data-transition="convex">
-					<h2>Conflicts</h2>
-					<ul>
-						<li>`git status` indicates which files has issues</li>
-						<li>Markers:</li>
-						<ul>
-							<li>Their code: <code>&lt;&lt;&lt;&lt;HEAD</code></li>
-							<li>Separator: <code>====</code></li>
-							<li>Your code: <code>&gt;&gt;&gt;&gt;BRANCH_NAME</code></li>
-						</ul>
-					</ul>
-				</section>
+            <section data-transition="convex">
+                <h2>Merging</h2>
+                <ul>
+                    <li>Let's bring those changes back to the project</li>
+                    <li>
+			Use `git merge TARGET_BRANCH_NAME` to merge the current
+			branch's changes with the target
+		    </li>
+                    <li>Ex: `git merge remote/master` to merge with remote's master.</li>
+                </ul>
+            </section>
 
-        <section data-transition="convex">
-					<h2>Rebasing</h2>
-					<ul>
-						<li>Add commits in a linear fashion (different from the date)</li>
-				</section>
+            <section data-transition="convex">
+                <h2>Conflicts</h2>
+                <ul>
+                    <li>
+			`git status` indicates which files have conflicting changes between branches of
+			the merge
+		    </li>
+                    <li>Markers:</li>
+                    <ul>
+                        <li>Their code: <code>&lt;&lt;&lt;&lt;HEAD</code></li>
+                        <li>Separator: <code>====</code></li>
+                        <li>Your code: <code>&gt;&gt;&gt;&gt;BRANCH_NAME</code></li>
+                    </ul>
+                </ul>
+            </section>
 
-        <section data-transition="convex">
-					<h2>Undoing Commits (from safest)</h2>
-					<ul>
-						<li>`git revert` creates a new commit that removes all the changes from the given commit</li>
-						<li>`git reset`</li>
-						<li>`git commit-amend` changes commit message</li>
-						<li>`git cherry-pick`</li>
-					</ul>
-					<p>Be careful when changing commit IDs of commits on remote repositories</p>
-				</section>
-			</div>
-		</div>
-		<script src="js/reveal.js"></script>
-		<script>
-			Reveal.initialize();
-		</script>
-	</body>
+            <section data-transition="convex">
+                <h2>Rebasing</h2>
+                <ul>
+                    <li>Add commits in a linear fashion (different from the date of committing)</li>
+                    <li>
+			Use `git rebase TARGET_BRANCH_NAME` to merg e the current branch's changes 
+			with the target
+		    </li>
+                    <li>Ex: `git rebase remote/master` to merge wit h remote's master.</li>
+                    <li>
+			For added visualization and interaction in the process you can use 
+			`git rebase -i TARGET_BRANCH_NAME`
+		    </li>
+            </section>
+
+            <section data-transition="convex">
+                <h2>Undoing Commits (from safest)</h2>
+                <ul>
+                    <li>
+			`git revert` creates a new commit that removes all the changes from the 
+			given commit
+		    </li>
+                    <li>`git reset`</li>
+                    <li>`git commit-amend` changes commit message</li>
+                    <li>`git cherry-pick`</li>
+                </ul>
+                <p>Be careful when changing commit IDs of commits on remote repositories</p>
+            </section>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
+</body>
+
 </html>
