@@ -168,7 +168,24 @@ $ git push -u origin master
 				</section>
 				
         <section data-transition="convex">
-					<h2>2-step Commit</h2>
+					<section><h2>2-step Commit</h2></section>
+          <section>
+            Git has three sections:<br>
+            <ol>
+              <li>Working Directory</li>
+              <li>Staging Area</li>
+              <li>History</li>
+            </ol>
+            <pre><code data-trim data-noescape>git add</code></pre> moves from PWD to Staging
+            <pre><code data-trim data-noescape>git commit</code></pre> moves from Staging to History
+          </section>
+          <section>
+            Example:
+            <ul>
+              <li>Working on a website you edit a few pages, but you also add some missing images from another page.</li>
+              <li>You can add and commit them independently to highlight that the changes were not related</li>
+            </ul>
+          </section>
 				</section>
 				
         <section data-transition="convex">
