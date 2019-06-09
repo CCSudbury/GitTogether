@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en-ca">
 
 <head>
+    <title>GitTogether</title>
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/theme/moon.css" />
     <link rel="stylesheet" href="css/presentation.css" />
@@ -13,12 +14,11 @@
             <section data-transition="convex">
                 <h2>GitHolidayParty</h2>
                 <p>
-			Inspired by
-			<a href="https://www.youtube.com/playlist?
-				list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF">
+                    Inspired by
+                    <a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF">
 				freeCodeCamp's tutorial series
 			</a>
-		</p>
+                </p>
             </section>
 
             <section data-transition="convex">
@@ -28,14 +28,16 @@
                 <section data-transition="convex">
                     <h3>Git</h3>
                     <ul>
-                        <li>Version Control Software (VCS)</li>
-                        <ul>
-                            <li>Time capsule</li>
-                        </ul>
-                        <li>Open Source</li>
-                        <ul>
-                            <li><a href="https://git-scm.com">git-scm</a></li>
-                        </ul>
+                        <li>Version Control Software (VCS)
+                            <ul>
+                                <li>Time capsule</li>
+                            </ul>
+                        </li>
+                        <li>Open Source
+                            <ul>
+                                <li><a href="https://git-scm.com">git-scm</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </section>
 
@@ -54,60 +56,52 @@
                     <h2>Setting up Git</h2>
                 </section>
                 <section data-transition="convex">
-                    <img src="images/newRepo.PNG" />
+                    <img src="images/newRepo.PNG" alt="GitHub New Repository" />
                     <footer>*Don't forget the open-source license!</footer>
                 </section>
                 <section data-transition="convex">
                     <h3>Cloning</h3>
                     <ol>
                         <li class="fragment" data-fragment-index="1">
-				Copy the URL for the new repo
-			</li>
+                            Copy the URL for the new repo
+                        </li>
                         <li class="fragment" data-fragment-index="2">
-				Open Git Bash in your working directory
-			</li>
+                            Open Git Bash in your working directory
+                        </li>
                         <li class="fragment" data-fragment-index="3">
-				<pre style="width:100%">
-					<code data-trim data-noescape>
+                            <code data-trim data-noescape>
 						$ git clone <mark>https://github.com/USERNAME/THE-REPO</mark>
 					</code>
-				</pre>
-			</li>
+                        </li>
                     </ol>
                 </section>
                 <section data-transition="convex">
                     <h3>Initializing</h3>
                     <ol>
                         <li class="fragment" data-fragment-index="1">
-				Open the working directory
-			</li>
+                            Open the working directory
+                        </li>
                         <li class="fragment" data-fragment-index="2">
-				Write your first bit of code
-			</li>
+                            Write your first bit of code
+                        </li>
                         <li class="fragment" data-fragment-index="3">
-				<pre>
 					<code data-trim data-noescape>
 						git add . ; git commit
 					</code>
-				</pre>
-			</li>
+                        </li>
                         <li class="fragment" data-fragment-index="4">
-				Connect to GitHub
-			</li>
-
-                        <ol class="fragment" data-fragment-index="5" 
-				style="list-style-type: lower-alpha">
-                            <li>Create a new repo</li>
-                            <li>Push an existing repository</li>
-                            <li>
-				<pre style="width:100%">
-					<code data-trim data-noescape>
-						$ git remote add origin https://github.com/username/new_repo
-						$ git push -u origin master
-					</code>
-				</pre>
-			    </li>
-                        </ol>
+                            Connect to GitHub
+                            <ol class="fragment" data-fragment-index="5" style="list-style-type: lower-alpha">
+                                <li>Create a new repo</li>
+                                <li>Push an existing repository</li>
+                                <li>
+                                    <code data-trim data-noescape>
+					    	$ git remote add origin https://github.com/username/new_repo
+					    	$ git push -u origin master
+					    </code>
+                                </li>
+                            </ol>
+                        </li>
                     </ol>
                 </section>
             </section>
@@ -119,29 +113,33 @@
                 <section data-transition="convex">
                     <h3>5 things to remember in a Git workflow</h3>
                     <ol>
-                        <li class="fragment" data-fragment-index="1">Branching</li>
-                        <ul>
-                            <li class="fragment" data-fragment-index="1">
-				Good practice not to work directly on master*
-			    </li>
-                        </ul>
-                        <li class="fragment" data-fragment-index="2">Commits</li>
-                        <ul>
-                            <li class="fragment" data-fragment-index="2">
-				As many or few as you want!
-			    </li>
-                        </ul>
+                        <li class="fragment" data-fragment-index="1">Branching
+                            <ul>
+                                <li class="fragment" data-fragment-index="1">
+                                    Good practice not to work directly on master*
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fragment" data-fragment-index="2">Commits
+                            <ul>
+                                <li class="fragment" data-fragment-index="2">
+                                    As many or few as you want!
+                                </li>
+                            </ul>
+                        </li>
                         <li class="fragment" data-fragment-index="3">Pull Request</li>
-                        <li class="fragment" data-fragment-index="4">Collaborate</li>
-                        <ul>
-                            <li class="fragment" data-fragment-index="4">
-				Maybe make some more commits/changes
-			    </li>
-                        </ul>
-                        <li class="fragment" data-fragment-index="5">Merge</li>
-                        <ul>
-                            <li class="fragment" data-fragment-index="5">Pray</li>
-                        </ul>
+                        <li class="fragment" data-fragment-index="4">Collaborate
+                            <ul>
+                                <li class="fragment" data-fragment-index="4">
+                                    Maybe make some more commits/changes
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fragment" data-fragment-index="5">Merge
+                            <ul>
+                                <li class="fragment" data-fragment-index="5">Pray</li>
+                            </ul>
+                        </li>
                     </ol>
                 </section>
             </section>
@@ -194,61 +192,45 @@
                 <section data-transition="convex">
                     <ul>
                         <li class="fragment" data-fragment-index="1">
-				<pre style="width:100%">
-					<code data-trim data-noescape>
+                            <code data-trim data-noescape>
 						git clone
 					</code>
-				</pre>
-			</li>
+                        </li>
                         <li class="fragment" data-fragment-index="2">
-				<pre style="width:100%">
-					<code data-trim data-noescape>
+                            <code data-trim data-noescape>
 						git pull/fetch
 					</code>
-				</pre>
-			</li>
+                        </li>
                         <li class="fragment" data-fragment-index="3">
-				<pre style="width:100%">
-					<code data-trim data-noescape>
+                            <code data-trim data-noescape>
 						git branch feature-branch
 					</code>
-				</pre>
-			</li>
+                        </li>
                         <li class="fragment" data-fragment-index="4">
-				<pre style="width:100%">
-					<code data-trim data-noescape>
+                            <code data-trim data-noescape>
 						git checkout feature-branch
 					</code>
-				</pre>
-			</li>
+                        </li>
                         <li class="fragment" data-fragment-index="5">
-				<pre style="width:100%">
-					<code data-trim data-noescape>
+                            <code data-trim data-noescape>
 						git status
 					</code>
-				</pre>
-			</li>
+                        </li>
                         <li class="fragment" data-fragment-index="6">
-				<pre style="width:100%">
 					<code data-trim data-noescape>
 						git add .
 					</code>
-				</pre>
-			</li>
+                        </li>
                         <li class="fragment" data-fragment-index="7">
-				<pre style="width:100%">
-					<code data-trim data-noescape>
+                            <code data-trim data-noescape>
 						git commit [-m]
 					</code>
-				</pre>
-			</li>
+                        </li>
                         <li class="fragment" data-fragment-index="8">
-				<pre style="width:100%">
-					<code data-trim data-noescape>
+                            <code data-trim data-noescape>
 						git push
 					</code>
-				</pre>
-			</li>
+                        </li>
                     </ul>
                 </section>
             </section>
@@ -257,10 +239,8 @@
                 <h2>How Commits Work</h2>
                 <ul>
                     <li>
-			Each commit has a unique ID of 40 characters
-			(SHA-1 Hash) containing information about the commit
-			such as the parent commit
-		    </li>
+                        Each commit has a unique ID of 40 characters (SHA-1 Hash) containing information about the commit such as the parent commit
+                    </li>
                 </ul>
             </section>
 
@@ -275,8 +255,10 @@
                         <li>Staging Area</li>
                         <li>History</li>
                     </ol>
-                    <pre><code data-trim data-noescape>git add</code></pre> moves from PWD to Staging
-                    <pre><code data-trim data-noescape>git commit</code></pre> moves from Staging to History
+                    <section data-transition="convex">
+                        <code data-trim data-noescape>git add</code> moves from PWD to Staging
+                        <code data-trim data-noescape>git commit</code> moves from Staging to History
+                    </section>
                 </section>
                 <section data-transition="convex">
                     Example:
@@ -292,10 +274,9 @@
                 <ul>
                     <li>Let's bring those changes back to the project</li>
                     <li>
-			Use `git merge TARGET_BRANCH_NAME` to merge the current
-			branch's changes with the target
-		    </li>
-                    <li>Ex: `git merge remote/master` to merge with remote's master.</li>
+			    Use <code data-trim data-noescape>git merge TARGET_BRANCH_NAME</code> to merge the current branch's changes with the target
+                    </li>
+		    <li>Ex: <code data-trim data-noescape>git merge remote/master</code> to merge with remote's master.</li>
                 </ul>
             </section>
 
@@ -303,15 +284,15 @@
                 <h2>Conflicts</h2>
                 <ul>
                     <li>
-			`git status` indicates which files have conflicting changes between branches of
-			the merge
-		    </li>
-                    <li>Markers:</li>
-                    <ul>
-                        <li>Their code: <code>&lt;&lt;&lt;&lt;HEAD</code></li>
-                        <li>Separator: <code>====</code></li>
-                        <li>Your code: <code>&gt;&gt;&gt;&gt;BRANCH_NAME</code></li>
-                    </ul>
+			    <code data-trim data-noescape>git status</code> indicates which files have conflicting changes between branches of the merge
+                    </li>
+                    <li>Markers:
+                        <ul>
+                            <li>Their code: <code>&lt;&lt;&lt;&lt;HEAD</code></li>
+                            <li>Separator: <code>====</code></li>
+                            <li>Your code: <code>&gt;&gt;&gt;&gt;BRANCH_NAME</code></li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
 
@@ -320,26 +301,24 @@
                 <ul>
                     <li>Add commits in a linear fashion (different from the date of committing)</li>
                     <li>
-			Use `git rebase TARGET_BRANCH_NAME` to merg e the current branch's changes 
-			with the target
-		    </li>
-                    <li>Ex: `git rebase remote/master` to merge wit h remote's master.</li>
+			    Use <code data-trim data-noescape>git rebase TARGET_BRANCH_NAME</code> to merg e the current branch's changes with the target
+                    </li>
+		    <li>Ex: <code data-trim data-noescape>git rebase remote/master</code> to merge wit h remote's master.</li>
                     <li>
-			For added visualization and interaction in the process you can use 
-			`git rebase -i TARGET_BRANCH_NAME`
-		    </li>
+			    For added visualization and interaction in the process you can use <code data-trim data-noescape>git rebase -i TARGET_BRANCH_NAME</code>
+                    </li>
+                </ul>
             </section>
 
             <section data-transition="convex">
                 <h2>Undoing Commits (from safest)</h2>
                 <ul>
                     <li>
-			`git revert` creates a new commit that removes all the changes from the 
-			given commit
-		    </li>
-                    <li>`git reset`</li>
-                    <li>`git commit-amend` changes commit message</li>
-                    <li>`git cherry-pick`</li>
+			    <code data-trim data-noescape>git revert</code> creates a new commit that removes all the changes from the given commit
+                    </li>
+		    <li><code data-trim data-noescape>git reset</code></li>
+		    <li><code data-trim data-noescape>git commit-amend</code> changes commit message</li>
+		    <li><code data-trim data-noescape>git cherry-pick</code></li>
                 </ul>
                 <p>Be careful when changing commit IDs of commits on remote repositories</p>
             </section>
