@@ -80,7 +80,7 @@
                     <h3>Initializing</h3>
                     <ol>
                         <li class="fragment" data-fragment-index="1">
-                            Open the working directory
+                            Open the working directory<br> (Or use <strong>git init &ltname&gt</strong> to create the working directory and initialize the git repository within it.)
                         </li>
                         <li class="fragment" data-fragment-index="2">
                             Write your first bit of code
@@ -97,7 +97,7 @@
                                 <li>Push an existing repository</li>
                                 <li>
                                     <code data-trim data-noescape>
-					    	$ git remote add origin https://github.com/username/new_repo
+					    	$ git remote add origin https://github.com/username/new_repo<br>
 					    	$ git push -u origin master
 					    </code>
                                 </li>
@@ -144,6 +144,116 @@
                 </section>
             </section>
 
+            <section data-transition="convex">
+              <h2>Working with Tags</h2>
+              <section data-transition="convex">
+                <h3>Creating a tag</h3>
+                <ul>
+                  <li>Tagging is generally used to capture a point in history that is used for a marked version.</li>
+                </ul>
+              </section>
+              <section data-transition="convex">
+                <h3>Creating a tag</h3>
+                <ul>
+                  <li>
+                    <code data-trim data-noescape>
+                      git tag &lttagname&gt
+                    </code>
+                  </li>
+                </section>
+                <section>
+                  <h3>Annotated Tags</h3>
+                  <li>Stored as full objects in the Git database.</li>
+                  <li>They store extra meta data:<br> tagger name, email, and date</li>
+                  <li>
+                    <code data-trim data-noescape>
+                       git tag -a v1.4 -m "my version 1.4"
+                     </code>
+                   </li>
+                 </section>
+                 <section>
+                   <h3>Listing Tags</h3>
+                   <li>
+                     <code data-trim data-noescape>
+                       git tag
+                     </code>
+                   </li>
+                 </section>
+                 <section>
+                   <h3>Tagging Old Commits</h3>
+                   <li>To gather a list of older commits.</li>
+                   <div id=customcode align=left>
+                     <font size=+2>
+                       <code data-trim data-noescape align=left>
+                         $ git log --pretty=oneline
+                       </code>
+                       <p>
+                         15027957951b64cf874c3557a0f3547bd83b3ff6 Merge branch 'feature'<br>
+                         a6b4c97498bd301d84096da251c98a07c7723e65 add update method for thing<br>
+                         0d52aaab4479697da7686c15f77a3d64d9165190 one more thing<br>
+                         6d52a271eda8725415634dd79daabbc4d9b6008e Merge branch 'experiment'
+                       </p>
+                     </font>
+                  </div>
+                 <li>To pick the top most commit<br>Merge branch 'feature' for new tag</li>
+                 <li>
+                   <code data-trim data-noescape>
+                     <font size="+1">
+                       git tag -a v1.2 15027957951b64cf874c3557a0f3547bd83b3ff6
+                     </font>
+                   </code>
+                 </li>
+               </section>
+               <section>
+                 <h3>Pushing Tags to Remote</h3>
+                 <li>By default git push will not push tags. Tags must be explicitly passed to git push.</li>
+                 <div id=customcode align=left>
+                   <font size=+2>
+                     <code data-trim data-noescape>
+                       $ git push origin v1.4
+                     </code>
+                     <p>
+                       Counting objects: 14, done.<br>
+                       Delta compression using up to 8 threads.<br>
+                       Compressing objects: 100% (12/12), done.<br>
+                       Writing objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.<br>
+                       Total 14 (delta 3), reused 0 (delta 0)<br>
+                       To git@bitbucket.com:atlasbro/gittagdocs.git<br>
+                       * [new tag]         v1.4 -> v1.4
+                     </p>
+                   </font>
+                  </div>
+                </section>
+                <section>
+                  <h3>Checking Out Tags</h3>
+                  <li>
+                    <code data-trim data-noescape>
+                      git checkout v1.4
+                    </code>
+                  </li>
+                  <div id=taginfo align=left>
+                    <font size="+2">
+                      <p>
+                        The above command will checkout the v1.4 tag.<br>
+                        This puts the repo in a detached HEAD state.<br>
+                        This means any changes made will not update the tag.<br>
+                        They will create a new detached commit.<br>
+                        This new detached commit will not be part of any branch and will only be reachable directly by the commits SHA hash.<br>
+                        Therefore it is a best practice to create a new branch anytime you're making changes in a detached HEAD state.
+                      </p>
+                    </font>
+                  </div>
+                </section>
+                <section>
+                  <h3>Deleting Tags</h3>
+                  <li>
+                    <code data-trim data-noescape>
+                      $ git tag -d &lttagname&gt
+                    </code>
+                  </li>
+                </section>
+              </section>
+            </section>
             <section data-transition="convex">
                 <h2>Workflow for Open Source</h2>
                 <section data-transition="convex">
@@ -235,6 +345,16 @@
                             <code data-trim data-noescape>
 						git push
 					</code>
+                        </li>
+                        <li class="fragment" data-fragment-index="10">
+                            <code data-trim data-noescape>
+            git stash
+          </code>
+                        </li>
+                        <li class="fragment" data-fragment-index="11">
+                            <code data-trim data-noescape>
+           git pop
+          </code>
                         </li>
                     </ul>
                 </section>
